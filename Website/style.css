@@ -14,6 +14,9 @@
     box-sizing: border-box;
 }
 
+/* Botar hambuger menu e x BRANCOS, + Arrumar h1 HERO + Criar main + configura menu mobile + adicionar efeito de fadin + adicionar efeitos hover */
+
+
 /* Paleta de cores 
 
 --khaki: #a39b8bff;
@@ -41,6 +44,7 @@
 
     --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'definir';
+    
    
     
     }
@@ -50,6 +54,8 @@
     header {
         color: white;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.32);
+        
+
         
     }
 
@@ -64,11 +70,18 @@
         gap: 10px;
         flex-direction: row;
         gap: 0px 10px;
-        box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.479);
+        /* box-shadow: 0px px 2px 1px rgba(0, 0, 0, 0.479);*/
         margin-bottom: 20px;
-        background-color: transparent;
         padding-left: 10px;
         padding-right: 10px;
+        /* Glass effect */
+        backdrop-filter: blur(20px);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.71)-35% , transparent);
+        background-color: rgba(0, 0, 0, 0.123);
+        margin-bottom: 0;
+       
+        
+        
 
     }
 
@@ -92,6 +105,8 @@
         justify-content: space-between;
         padding: 1.5rem 6rem;   
         
+        
+        
      }
      /*
      .logo {
@@ -106,19 +121,39 @@
         */
     .logo {
         width: 80px;
-        color:var(--cor-secundaria);
-
+        
+        
     }
     
 
-     h1.logo {
+     .logo h1 {
         display: flex;
         align-items: center;
         font-family: manuscrita2;
+        color: white;
+        text-shadow: 4px 1px 6px black;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        
+
+        
         
      }
 
-     p.logo {
+     .logo abbr {
+        text-decoration: none;
+     }
+/*
+     .logo h1:hover {
+        
+        font-family: Arial;
+        font-size: 28px;
+       
+        
+        
+     }
+*/
+     .logo p {
         display: flex;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
@@ -126,12 +161,27 @@
         font-size: 0.5rem;
         line-height: 0.7rem;
         text-align: center;
-        padding: 0px 5px;
+        padding: 0px 10px;
+        margin-left: -0.5rem;
+        color: black;
+        transition-duration: 500ms;
+        transition-timing-function: ease-out;
+        
+
      }
+
+     .logo p:hover {
+       
+        color: white;
+    }
+
+
+
 
      .nav-list {
         display: flex;
         align-items: center;
+       
      }
 
      .nav-list ul {
@@ -142,30 +192,50 @@
 
      .nav-item {
         margin: 0 15px;
+        text-shadow: 4px 1px 6px black;
+        transition-duration: 500ms;
+        transition-timing-function: ease-out;
+    
+        
+     }
+
+     .nav-item:hover {
+       
+        text-decoration: underline;
+        
      }
      
      .nav-link {
         text-decoration: none;
         font-size: 1.15rem;
-        color: var(--cor-secundaria);
+        color: white;
         font-weight: 400;
+        
         
      }
 
-     
+     body {
+      
+     }
 
+     
+     
+     
   
    
    .hero {
+   
     margin-top: 0;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3));
-    position: absolute;
+    
+   /* position: absolute; */
     padding: 0, 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    
 
    } 
    
@@ -173,16 +243,21 @@
   .mobile-menu-icon {
     display: none;
     cursor: pointer;
-    background-color: transparent
+    background-color: transparent;
+    
+    
     
   }
 
+  
+
   .mobile-menu {
     display: none;
-    background-color: #250214;
+    background-color: transparent;
     min-width: 300px;
     max-width: 1000px;
     padding: 20px;
+    backdrop-filter: blur(20px);
     
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.605);
     margin-bottom: 20px;
@@ -209,24 +284,25 @@
     display: none;
   }
 
-  .content {
-    text-align: center;
+  .headline {
+    display: block;
+    width: 98vw;
+    height: 98vh;
+    
+    align-items: center;
+    justify-items: center;
     
 
+
   }
-  .content h1 {
-    font-size: 60px;
+  .headline h1 {
+    font-size: 80px;
     color: #fff;
     font-weight: 600px;
     display: flex;
-    margin: 0;
-    position: absolute;
-    margin-top: 200px;
-    
-    
-    
-    
-    
+    justify-content: center;
+    text-align: center;
+    text-shadow: 4px 1px 6px black;
   }
 
   .content a {
