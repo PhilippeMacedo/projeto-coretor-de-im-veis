@@ -9,27 +9,33 @@
 </head>
 
 
-<header class="menuprincial">
-    <nav class="nav-bar">
+    <body>
+        <header class="menuprincial">
+            <nav class="nav-bar">
 
-        <div class="logo">
-            <img src="imagens/logo corretor/Logo com CRECI 138px.png" alt="Logo">
-            </div>
+                <div class="logo">
+                    <h1 class="logo">Philippe Macedo</h1> 
+                    <p class="logo">Corretor de Imóveis  CRECI 32966</p>
+                </div>
        
-        <div class="nav-list">
+                <div class="nav-list">
 
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Inicial</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Comprar</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Vender</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Alugar</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
-        </div>
+                    <ul>
+                         <li class="nav-item"><a href="#" class="nav-link">Inicial</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Comprar</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Vender</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Alugar</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                
+                     </ul>
+                </div>
 
         <div class="mobile-menu-icon">
-            <button><img class="icon" src="imagens/icons/icons8-menu-24.png" alt="Menu Icon"></button>
-
+            <button onclick="menuShow()"><img class="icon" src="imagens/icons/arrows_hamburger_2_40392.png" alt="Menu Icon"></button>
+        </div>
+    
+        
+        <div class="mobile-menu">
             <ul>
                
                 <li class="nav-item"><a href="#" class="nav-link">Inicial</a></li>
@@ -37,36 +43,43 @@
                 <li class="nav-item"><a href="#" class="nav-link">Vender</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Alugar</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                
             </ul>
+            </nav>
+    </header>
 
         </div>
 
+        <div class="content">
+            <h1 class="content">Venha encontrar seu lar, doce lar!</h1>
+        </div>
 
-    </nav>
     
     
-</header>
 
 
 
 
 
 
-<main>
-    
     <div class="hero">
 
-        <h1 class="heroh1">Venha encontrar seu lar, doce lar!</h1>
         <video class="video-bg"
             autoplay
             muted
-            loop>
-            
+            loop
+            plays-inline>
+            <source src="videos/passeiocasa.mp4">
         </video>
     </div>
-</main>
 
-<body>
-    
-</body>
+
+
+
+
+    <script src="script.js"></script>
+
+  
+    </body>
+
 </html>
