@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Paleta de cores 
+
+--khaki: #a39b8bff;
+--celestial-blue: #1b98e0ff;
+--indigo-dye: #003d5bff;
+--coffee: #6d4c3dff;
+--dark-purple: #2e0219ff;
+
+ #a39b8bff
+ #1b98e0ff
+ #003d5bff
+ #6d4c3dff
+ #2e0219ff
+
+
+*/
+/* Não se especifica o tipo do parâmetro (ex: color) 
+
+
+FAZER - melhorar a qualidade da imagem da logo + adicionar o númeor do CRECI + CORRRETOR DE IMÓVEIS + COLOCAR DATA DA CERIMÔNIA NA AGENDA - DEFINIR FONTE DESTAQUE  
+
+
+*/
+    
+    :root {
+    --cor-primaria: #293040;
+    --cor-secundaria:#D5B263;
+    --cor-terciaria: #250214;
+    --cor-quaternaria: #4A2511;
+    --cor-quintenaria: ;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'definir';
+   
+
+    }
+
+
+
+    header {
+        color: white;
+    }
+
+
+    #logo {
+        
+        
+        display: absolute;
+        
+        box-shadow: 8px 14px 10px 10px rgba(0, 0, 0, 0.479);
+        border: solid rgba(0, 0, 0, 0.317);
+        margin-right: 160px;
+        box-shadow: 3px 9px 10px 0px rgba(0, 0, 0, 0.479);
+        
+        
+       
+        
+        
+
+    }
+
+    nav {
+        display: flex;
+       
+               justify-content: start;
+        gap: 10px;
+        flex-direction: row;
+        gap: 0px 10px;
+        box-shadow: 20px 6px 10px rgba(0, 0, 0, 0.479);
+        margin-bottom: 20px;
+        
+        overflow: hidden;
+        
+        
+    }
+
+    nav a:not(#logo) {
+
+
+        display: inline-block;
+        
+        padding: 20px;
+        align-self: center;
+        text-align: center;
+        height: 15px;
+        width: 100px;
+        text-align: bottom;
+        border-radius: 10px;
+        margin-top: 0.5px;
+        color: var(--cor-secundaria);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        border: solid rgba(0, 0, 0, 0.479);
+    }
+
+
+
+  
+  body {
+    
+    background-color: var(--cor-primaria);
+    color: var(--cor-quintenaria);
+    text-align: center;
+    color: black;
+    
+   
+   
+  }
+
+  main {
+    position: relative;
+    
+    
+    
+    
+
+
+    
+   .heroh1 {
+    display: flex;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+    font-size: 1.2em;
+    text-size-adjust: 100%;
+    justify-content: center;
+  
+    
+   } 
+    
+    
+  }
+
+  .hero {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 10px 10x black;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100vw;
+  
+
+
+}
+
+.video-bg {
+    
+   z-index: -1;
+   
+   width: 100vw;
+   overflow-x: hidden;
+   
+  
+    
+    
+    
+    
+    
+}
